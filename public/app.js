@@ -1,19 +1,19 @@
 const app = new Vue({
-  el: '#app',
+  el: "#app",
   data: {
-    url: '',
-    slug: '',
-    error: '',
+    url: "",
+    slug: "",
+    error: "",
     formVisible: true,
     created: null,
   },
   methods: {
     async createUrl() {
-      this.error = '';
-      const response = await fetch('/url', {
-        method: 'POST',
+      this.error = "";
+      const response = await fetch("/url", {
+        method: "POST",
         headers: {
-          'content-type': 'application/json',
+          "content-type": "application/json",
         },
         body: JSON.stringify({
           url: this.url,
@@ -23,10 +23,10 @@ const app = new Vue({
       if (response.ok) {
         const result = await response.json();
         this.formVisible = false;
-        this.created = `https://l4.wtf/${result.slug}`;
+        this.created = `https://short-itt.herokuapp.com/${result.slug}`;
       } else if (response.status === 429) {
         this.error =
-          'You are sending too many requests. Try again in 30 seconds.';
+          "You are sending too many requests. Try again in 30 seconds.";
       } else {
         const result = await response.json();
         this.error = result.message;
