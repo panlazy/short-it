@@ -1,5 +1,9 @@
-![logo](https://fontmeme.com/permalink/201228/d82d68083cede42d71ad413711fe8397.png)
+## Short It!
 
-##
+-   Mini url shortener for personal use.
+-   You can deploy to Heroku in a few minutes, get a free MongoDB cluster from MongoDB Atlas, and provide the connection string to environment variables.
+-   Written in Vue.js and Express.
 
-Mini url shortener for personal use.
+## License
+
+This project is under the [MIT](LICENSE.md) license.
