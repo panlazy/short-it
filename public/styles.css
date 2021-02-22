@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +25,7 @@ header {
 }
 
 .logo {
-  max-width: 60%;
+  max-width: 100%;
   image-rendering: -moz-crisp-edges;
 }
 
