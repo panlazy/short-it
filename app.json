@@ -1,7 +1,7 @@
 {
 	"name": "Short It!",
 	"description": "Simple self hosted URL shortener",
-	"repository": "https://github.com/heroku/node-js-getting-started",
+	"repository": "https://github.com/redgroot/short-it",
 	"logo": "https://short-itt.herokuapp.com/ice-cream.svg",
 	"keywords": ["node", "express", "vue", "url-shortener", "short-it"]
 }
